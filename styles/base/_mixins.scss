@@ -26,6 +26,23 @@
   font-weight: $fontweight;
 }
 
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin setLinkdecor {
+  text-decoration: none;
+  transition: .3s;
+
+  &:active {
+    text-decoration: none;
+    transition: .3s;
+  }
+}
+
 //Roboto
 @mixin setRobh1 {
   @include setFont ($roboto, 600, 64px, 72px);
@@ -183,3 +200,4 @@
   text-align: center;
   border-radius: 25px;
 }
+

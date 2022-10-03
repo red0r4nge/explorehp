@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+a,
+a:active {
+  text-decoration: none;
+  transition: .3s; }
+
+ul {
+  list-style: none; }
+
 @font-face {
   font-family: "bluu_nexttitling";
   src: url("../../fonts/BluuNext-Titling.ttf") format("truetype"), url("../../fonts/bluunext-titling.woff2") format("woff2"), url("../../fonts/bluunext-titling.woff") format("woff");
@@ -20,19 +35,167 @@
   margin: 0 auto;
   padding: 0; }
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-  box-sizing: border-box; }
+.header {
+  background-color: #48483D; }
+  .header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin: 20px 0; }
+    @media (min-width: 768px) {
+      .header .nav {
+        margin: 26px 0; } }
+    @media (min-width: 1280px) {
+      .header .nav {
+        margin: 36px 0; } }
+    .header .nav .nav__group {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0; }
+      .header .nav .nav__group .container__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-shrink: 0; }
+        .header .nav .nav__group .container__menu .menu {
+          position: relative;
+          display: none;
+          opacity: 0; }
+          @media (min-width: 1280px) {
+            .header .nav .nav__group .container__menu .menu {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: start;
+              flex-wrap: nowrap;
+              flex-shrink: 0;
+              opacity: 1;
+              width: 564px;
+              margin: 0 0 0 20px;
+              padding: 0; } }
+          .header .nav .nav__group .container__menu .menu .menu__item {
+            background: #48483D;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 15px; }
+            .header .nav .nav__group .container__menu .menu .menu__item:active {
+              background-color: #707063; }
+            @media (min-width: 1280px) {
+              .header .nav .nav__group .container__menu .menu .menu__item {
+                margin: 0;
+                text-align: start;
+                background: none;
+                border-radius: 0; }
+                .header .nav .nav__group .container__menu .menu .menu__item:active {
+                  background: none; } }
+            .header .nav .nav__group .container__menu .menu .menu__item .menu__link {
+              display: block;
+              font-family: "bluu_nexttitling";
+              font-size: 14px;
+              line-height: 17px;
+              font-weight: 600;
+              text-decoration: none;
+              transition: .3s;
+              color: #FDFDFD;
+              padding: 7px; }
+              .header .nav .nav__group .container__menu .menu .menu__item .menu__link:active {
+                text-decoration: none;
+                transition: .3s; }
+              .header .nav .nav__group .container__menu .menu .menu__item .menu__link:hover {
+                color: #fff0b7; }
+              @media (min-width: 1280px) {
+                .header .nav .nav__group .container__menu .menu .menu__item .menu__link {
+                  display: inline-block;
+                  padding: 0; } }
+        .header .nav .nav__group .container__menu #toggle {
+          display: none; }
+          .header .nav .nav__group .container__menu #toggle:checked ~ .menu {
+            display: block;
+            opacity: 1;
+            background: #5d5d48;
+            padding: 15px 20px 0;
+            position: absolute;
+            top: 68px;
+            left: 0;
+            right: 0; }
+          @media (min-width: 768px) {
+            .header .nav .nav__group .container__menu #toggle:checked ~ .menu {
+              top: 80px; } }
+        .header .nav .nav__group .container__menu .toggle {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          border-radius: 0;
+          background-image: url(../../img/burger.svg);
+          text-decoration: none;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          margin-left: 26px; }
+          @media (min-width: 768px) {
+            .header .nav .nav__group .container__menu .toggle {
+              margin-left: 36px; } }
+          @media (min-width: 1280px) {
+            .header .nav .nav__group .container__menu .toggle {
+              display: none; } }
+    .header .nav .nav__group-primary #nav__login {
+      width: 80px;
+      display: inline;
+      padding-top: 7px;
+      padding-right: 20px;
+      padding-bottom: 7px;
+      padding-left: 20px;
+      background: #6352CE;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: auto;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: .3s;
+      margin-left: 20px; }
+      .header .nav .nav__group-primary #nav__login:hover {
+        background: #988CE3;
+        transition: 500ms ease-in;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .header .nav .nav__group-primary #nav__login:active {
+        text-decoration: none;
+        transition: .3s; }
 
-a,
-a:active {
-  text-decoration: none;
-  transition: .3s; }
+#page1 .main .banner {
+  padding: 500px 0; }
 
-ul {
-  list-style: none; }
+.bg1 {
+  background: url(../../img/discovbanner.png) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.bg2 {
+  background: url(../../img/hogwarts.jpg) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+
+.bg3 {
+  background: url(../../img/platform.jpg) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,45 @@
+#page1 {
+  .main {
+    .banner {
+      padding: 500px 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg1 {
+  background: url(../../img/discovbanner.png) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.bg2 {
+  background: url(../../img/hogwarts.jpg) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.bg3 {
+  background: url(../../img/platform.jpg) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
