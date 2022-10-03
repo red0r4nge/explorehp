@@ -1,7 +1,10 @@
+@import '../base/variables';
+@import '../base/mixins';
+
 #page1 {
   .main {
     .banner {
-      background: url(../../img/discovbanner.png) no-repeat scroll center;
+      background: url(../img/discovbanner.png) no-repeat scroll center;
       transition: 2s background;
       background-size: cover;
       -webkit-background-size: cover;
@@ -19,12 +22,10 @@
         @media (min-width: $desktop) {
           @include setBluuh1;
         }
-
       }
 
       .banner__group {
         @include setFlexbox (row, center, center, nowrap);
-
 
         .banner__link {
           @include setLinkdecor;
@@ -43,7 +44,7 @@
 }
 
 .bg1 {
-  background: url(../../img/discovbanner.png) no-repeat scroll center;
+  background: url(../img/discovbanner.png) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;
@@ -51,7 +52,7 @@
 }
 
 .bg2 {
-  background: url(../../img/hogwarts.jpg) no-repeat scroll center;
+  background: url(../img/hogwarts.jpg) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;
@@ -59,7 +60,7 @@
 }
 
 .bg3 {
-  background: url(../../img/platform.jpg) no-repeat scroll center;
+  background: url(../img/platform.jpg) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;

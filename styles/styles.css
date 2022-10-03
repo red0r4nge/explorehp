@@ -16,12 +16,12 @@ ul {
 
 @font-face {
   font-family: "bluu_nexttitling";
-  src: url("../../fonts/BluuNext-Titling.ttf") format("truetype"), url("../../fonts/bluunext-titling.woff2") format("woff2"), url("../../fonts/bluunext-titling.woff") format("woff");
+  src: url("../fonts/BluuNext-Titling.ttf") format("truetype"), url("../fonts/bluunext-titling.woff2") format("woff2"), url("../fonts/bluunext-titling.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Harry P";
-  src: url("../../fonts/HARRYP__.TTF") format "truetype";
+  src: url("../fonts/HARRYP__.TTF") format "truetype";
   font-weight: normal;
   font-style: normal; }
 .container {
@@ -175,7 +175,7 @@ ul {
         transition: .3s; }
 
 #page1 .main .banner {
-  background: url(../../img/discovbanner.png) no-repeat scroll center;
+  background: url(../img/discovbanner.png) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;
@@ -234,21 +234,21 @@ ul {
           margin: 0; } }
 
 .bg1 {
-  background: url(../../img/discovbanner.png) no-repeat scroll center;
+  background: url(../img/discovbanner.png) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover; }
 
 .bg2 {
-  background: url(../../img/hogwarts.jpg) no-repeat scroll center;
+  background: url(../img/hogwarts.jpg) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover; }
 
 .bg3 {
-  background: url(../../img/platform.jpg) no-repeat scroll center;
+  background: url(../img/platform.jpg) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
   -webkit-background-size: cover;
