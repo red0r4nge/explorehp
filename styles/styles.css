@@ -175,7 +175,63 @@ ul {
         transition: .3s; }
 
 #page1 .main .banner {
-  padding: 500px 0; }
+  background: url(../../img/discovbanner.png) no-repeat scroll center;
+  transition: 2s background;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; }
+  #page1 .main .banner .banner__headline {
+    font-family: "bluu_nexttitling";
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: #fdfdfd; }
+    @media (min-width: 768px) {
+      #page1 .main .banner .banner__headline {
+        margin: 162px 0; } }
+    @media (min-width: 1280px) {
+      #page1 .main .banner .banner__headline {
+        font-family: "bluu_nexttitling";
+        font-size: 64px;
+        line-height: 72px;
+        font-weight: 600; } }
+  #page1 .main .banner .banner__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0; }
+    #page1 .main .banner .banner__group .banner__link {
+      text-decoration: none;
+      transition: .3s;
+      width: 180px;
+      display: inline;
+      padding-top: 12px;
+      padding-right: 39px;
+      padding-bottom: 12px;
+      padding-left: 39px;
+      background: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+      color: black;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: auto;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 25px;
+      display: inline-block;
+      width: 205px;
+      margin-bottom: 50px; }
+      #page1 .main .banner .banner__group .banner__link:active {
+        text-decoration: none;
+        transition: .3s; }
+      #page1 .main .banner .banner__group .banner__link:hover {
+        background: #fff0b7;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      @media (min-width: 768px) {
+        #page1 .main .banner .banner__group .banner__link {
+          margin: 0; } }
 
 .bg1 {
   background: url(../../img/discovbanner.png) no-repeat scroll center;

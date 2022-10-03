@@ -62,36 +62,36 @@
 
 //Bluu Next
 @mixin setBluuh1 {
-  @include setFont ($bluunext, 600, 64px, 72px)
+  @include setFont ($bluunext, 600, 64px, 72px);
 }
 
 @mixin setBluuh2 {
-  @include setFont ($bluunext, 600, 24px, 32px)
+  @include setFont ($bluunext, 600, 24px, 32px);
 }
 
 @mixin setBluutitle {
-  @include setFont ($bluunext, 600, 20px, 28px)
+  @include setFont ($bluunext, 600, 20px, 28px);
 }
 
 @mixin setBluusubtitle {
-  @include setFont ($bluunext, 600, 16px, 24px)
+  @include setFont ($bluunext, 600, 16px, 24px);
 }
 
 @mixin setBluubody {
-  @include setFont ($bluunext, 600, 14px, 17px)
+  @include setFont ($bluunext, 600, 14px, 17px);
 }
 
 @mixin setBluucaption {
-  @include setFont ($bluunext, 600, 12px, 16px)
+  @include setFont ($bluunext, 600, 12px, 16px);
 }
 
 //Harry Potter
 @mixin setHp {
-  @include setFont ($hp, 400, 64px, 72px)
+  @include setFont ($hp, 400, 64px, 72px);
 }
 
 @mixin setHpsub {
-  @include setFont ($hp, 400, 24px, 32px)
+  @include setFont ($hp, 400, 24px, 32px);
 }
 
 //Buttons 
@@ -200,4 +200,3 @@
   text-align: center;
   border-radius: 25px;
 }
-

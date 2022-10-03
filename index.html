@@ -23,11 +23,9 @@
       <div class="wrapper">
         <div class="row g-0">
           <div class="column col-12 col-md-12 nav">
-            <div class="nav__group">
-              <a href="#" class="nav__logo"><img src="img/logo.svg" alt="logo"></a>
-              <div class="container__menu">
-                <input type="checkbox" id="toggle">
-                <label for="toggle" class="toggle" onclick></label>
+            <div class="nav__group"><a href="#" class="nav__logo"><img src="img/logo.svg" alt="logo"></a>
+              <div class="container__menu"><input type="checkbox" id="toggle"><label for="toggle" class="toggle"
+                  onclick></label>
                 <ul class="menu">
                   <li class="menu__item"><a href="#" class="menu__link">Discover the tours</a></li>
                   <li class="menu__item"><a href="#" class="menu__link">Hot deals</a></li>
@@ -37,25 +35,27 @@
                 </ul>
               </div>
             </div>
-            <div class="nav__group nav__group-primary">
-              <a href="#"><img src="img/navbasket.svg" alt="navbasket" id="nav__basket"></a>
-              <a href="#" id="nav__login">Log in</a>
-            </div>
+            <div class="nav__group nav__group-primary"><a href="#"><img src="img/navbasket.svg" alt="navbasket"
+                  id="nav__basket"></a><a href="#" id="nav__login">Log in</a></div>
           </div>
         </div>
       </div>
     </header>
-
     <main class="main">
       <div class="banner">
-        <div class="wrapper">
-          <div class="row g-0r">
-            <div class="column col-12 col-md-6">title </div>
-            <div class="column col-12 col-md-6">title </div>
+        <div class="banner__container">
+          <div class="wrapper">
+            <div class="row g-0">
+              <div class="column col-12 col-md-6">
+                <h1 class="banner__headline">Explore the World of Harry Potter with us !</h1>
+              </div>
+              <div class="column col-12 col-md-6 banner__group">
+                <a href="#" class="banner__link">Book your attraction</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
 
       <div class="row g-0">
         <div class="column col-12 col-md-4">content </div>
@@ -63,10 +63,6 @@
         <div class="column col-12 col-md-4">content </div>
       </div>
     </main>
-
-
-
-
 
     <footer class="footer">
       <div class="row g-0">
@@ -82,20 +78,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"
       integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      $(function () {
+    <script>$(function () {
         bg_from = 1;
         bg_to = 3;
         bg_now = 1;
-        bg_interval = 3;
+        bg_interval = 5;
+
         setInterval(function () {
-          $('.banner').removeClass('bg' + bg_now);
+          $('.banner__container').removeClass('bg' + bg_now);
           if (bg_now == bg_to) bg_now = 1;
           else bg_now++;
-          $('.banner').addClass('bg' + bg_now);
-        }, bg_interval * 1000);
+          $('.banner__container').addClass('bg' + bg_now);
+        }
 
-      });
+          , bg_interval * 1000);
+      }
+
+      );
     </script>
 </body>
 

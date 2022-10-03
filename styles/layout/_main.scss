@@ -1,24 +1,46 @@
 #page1 {
   .main {
     .banner {
-      padding: 500px 0;
+      background: url(../../img/discovbanner.png) no-repeat scroll center;
+      transition: 2s background;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+
+      .banner__headline {
+        @include setBluuh2;
+        margin: 70px 0;
+        color: #fdfdfd;
+
+        @media (min-width: $tablet) {
+          margin: 162px 0;
+        }
+
+        @media (min-width: $desktop) {
+          @include setBluuh1;
+        }
+
+      }
+
+      .banner__group {
+        @include setFlexbox (row, center, center, nowrap);
+
+
+        .banner__link {
+          @include setLinkdecor;
+          @include Button_accent;
+          display: inline-block;
+          width: 205px;
+          margin-bottom: 50px;
+
+          @media (min-width: $tablet) {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .bg1 {
   background: url(../../img/discovbanner.png) no-repeat scroll center;
