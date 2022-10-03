@@ -19,10 +19,10 @@
   font-style: normal;
 }
 
-body {
+.container {
   @include setFont ($roboto, 400, 14px, 16px);
 }
 
 .wrapper {
-  @include setWrapper (92%, 0 auto, 0)
+  @include setWrapper (92%, 0 auto, 0);
 }
