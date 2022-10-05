@@ -195,7 +195,7 @@ ul {
     width: 400px;
     margin: 70px 0;
     padding: 0;
-    color: #fdfdfd; }
+    color: white; }
     @media (min-width: 768px) {
       #homepage .main .banner .banner__headline {
         margin: 162px 0; } }
@@ -236,7 +236,7 @@ ul {
         #homepage .main .banner .banner__group .banner__link {
           margin: 0; } }
 #homepage .main .cards {
-  background-color: #48483D; }
+  background-color: #48483d; }
   @media (max-width: 767px) {
     #homepage .main .cards .wrapper {
       width: 100%; } }
@@ -290,7 +290,7 @@ ul {
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
-    color: #fdfdfd;
+    color: white;
     margin: 150px 0 30px; }
     @media (min-width: 768px) {
       #homepage .main .cards .wrapper .cards__container .cards__item .cards__group .cards__title {
@@ -323,7 +323,7 @@ ul {
       margin-right: 14px;
       color: #fff0b7; }
     #homepage .main .cards .wrapper .cards__container .cards__item .cards__group .cards__list .cards__list-item .list__text {
-      color: #fdfdfd;
+      color: white;
       margin: 0 0 15px;
       font-family: "Roboto", sans-serif;
       font-size: 14px;
@@ -537,7 +537,7 @@ ul {
             height: 200px; } }
 
 #login_error {
-  background: #48483D;
+  background: #48483d;
   margin: 0 auto; }
   #login_error .main__login {
     margin: 5% auto; }
@@ -571,7 +571,7 @@ ul {
       align-items: center;
       flex-wrap: wrap;
       flex-shrink: 0;
-      background: #48483D; }
+      background: #48483d; }
       #login_error .main__login .main__login--secondary .text__login {
         display: block;
         font-family: "Roboto", sans-serif;

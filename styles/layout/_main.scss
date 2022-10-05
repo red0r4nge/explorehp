@@ -11,7 +11,7 @@
       .banner__headline {
         @include setHp;
         @include setWrapper (400px, 70px 0, 0);
-        color: #fdfdfd;
+        color: $font-color--main;
 
         @media (min-width: $tablet) {
           margin: 162px 0;
@@ -36,7 +36,7 @@
     }
 
     .cards {
-      background-color: #48483D;
+      background-color: $color--background;
 
       .wrapper {
         @media (max-width: $mobilemax) {
@@ -91,7 +91,7 @@
 
               .cards__title {
                 @include setRobh2;
-                color: #fdfdfd;
+                color: $font-color--main;
                 margin: 150px 0 30px;
 
                 @media (min-width: $tablet) {
@@ -127,7 +127,7 @@
                   }
 
                   .list__text {
-                    color: #fdfdfd;
+                    color: $font-color--main;
                     margin: 0 0 15px;
                     @include setRobbody;
                   }
@@ -276,7 +276,7 @@
 }
 
 #login_error {
-  background: #48483D;
+  background: $color--background;
   margin: 0 auto;
 
   .main__login {
@@ -300,7 +300,7 @@
 
     .main__login--secondary {
       @include setFlexbox (column, space-evenly, center, wrap);
-      background: #48483D;
+      background: $color--background;
 
       .text__login {
         display: block;
