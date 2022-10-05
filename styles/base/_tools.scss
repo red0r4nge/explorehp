@@ -1,3 +1,24 @@
+//Variables
+$mobilemax: 767px;
+$tablet: 768px;
+$desktop: 1280px;
+$roboto: 'Roboto',
+sans-serif;
+$bluunext: "bluu_nexttitling";
+$hp: "HarryP";
+$color--primary: #6352CE;
+$color--accent: gold;
+$color--gradient: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+$color--disabled: rgba(164, 163, 161, 1);
+$color--secondary: rgba(255, 240, 183, 1);
+$color--additional: rgba(226, 226, 226, 1);
+$color--background: rgba(72, 72, 61, 1);
+$font-color--main: white;
+$font-color--disabled: rgba(94, 93, 91, 1);
+$font-color--black: black;
+$width_wrap: 92%;
+
+//Mixins
 @mixin setWrapper ($width, $margin, $padding) {
   width: $width;
   margin: $margin;

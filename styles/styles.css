@@ -28,10 +28,6 @@ ul {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
   font-weight: 400; }
 
 .wrapper {
@@ -635,6 +631,339 @@ ul {
           #login_error .main__login .main__login--secondary .form__login .btn__disabled:active {
             text-decoration: none;
             transition: .3s; }
+
+#ticket__page {
+  background-color: #48483d;
+  color: white; }
+  #ticket__page .container {
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    /*including padding*/ }
+    #ticket__page .container .row {
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-bottom: 0;
+      padding-left: 0;
+      /*including padding*/ }
+      #ticket__page .container .row .imgs {
+        height: 40vh;
+        /*setting img height*/
+        background-image: url("../img/diagonaley.jpg");
+        /*including background img*/
+        background-repeat: no-repeat;
+        /*setting no repeat*/
+        background-position: center bottom;
+        /*setting position*/
+        background-attachment: fixed;
+        /*fixed position to allow the parallax effect*/
+        box-shadow: 0 0 50px 50px #48483d inset;
+        /*adding box shadow to blur the edges of the image*/
+        z-index: 100; }
+      #ticket__page .container .row .product__img {
+        border-radius: 25px;
+        /*including border radius*/
+        width: 80%;
+        /*setting the width*/
+        margin-top: 30px;
+        margin-right: 0;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        /*including margin*/
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        /*including padding*/
+        border: 1px solid transparent;
+        /*including border outline*/
+        border-image: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+        /*including border color*/
+        border-image-slice: 1;
+        /*inward offset*/
+        transition: all 2s;
+        /*including transition for the animation*/ }
+        #ticket__page .container .row .product__img:hover {
+          opacity: 0.8;
+          /*including opacity*/
+          transform: scale(1.2);
+          /*including scale transformation for images on hover*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .product__img {
+            width: 75%;
+            /*setting the width*/
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*setting the margin*/ } }
+        @media screen and (min-width: 1280px) {
+          #ticket__page .container .row .product__img {
+            margin-top: 50px;
+            margin-right: 0;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*setting the margin*/ } }
+      #ticket__page .container .row .column--secondary {
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+        /*setting the padding*/ }
+      #ticket__page .container .row .product__content {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        /*setting the font for the title*/
+        text-align: center;
+        /*aligning text in the center*/
+        padding-top: 0;
+        padding-right: 5px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        /*setting the padding*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .product__content {
+            text-align: left;
+            /*for table & desktop aligning text to the left*/
+            padding: none;
+            /*no padding for table and desktop*/ } }
+      #ticket__page .container .row .nav-tabs {
+        border-bottom: 2px solid gold;
+        /*setting the border*/ }
+        #ticket__page .container .row .nav-tabs .nav-link {
+          color: white;
+          /*setting font color*/
+          background: none;
+          /*no background for the nav tabs*/ }
+          #ticket__page .container .row .nav-tabs .nav-link:hover {
+            background: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+            /*setting the background color for nav tabs on hover*/
+            color: black;
+            /*setting the font color for nav tabs on hover*/ }
+      #ticket__page .container .row .tab-content:hover {
+        box-shadow: 10px 5px 10px gold;
+        /*setting box shadow*/
+        border-radius: 25px;
+        /*setting border radius for the tab content*/ }
+      #ticket__page .container .row .tab-content .tab__details {
+        text-align: left;
+        /*aligning text to the left inside the tab content area*/
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        /*including padding*/
+        height: 180px;
+        /*including height for mobile version*/
+        overflow-y: scroll;
+        /*including vertical scroll for mobile*/
+        -webkit-overflow-scrolling: touch;
+        /*touch scroll for mobile*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .tab-content .tab__details {
+            overflow-y: visible;
+            /*no overflow for table and desktop*/
+            height: 100%;
+            /*setting the height to 100%*/
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 5px;
+            /*including the margin*/ } }
+        #ticket__page .container .row .tab-content .tab__details .tab__link {
+          text-decoration: none;
+          transition: .3s;
+          /*removing link styling*/
+          color: white;
+          /*setting the font color for the links*/ }
+          #ticket__page .container .row .tab-content .tab__details .tab__link:active {
+            text-decoration: none;
+            transition: .3s; }
+          #ticket__page .container .row .tab-content .tab__details .tab__link:hover {
+            text-decoration: underline;
+            /*setting the underline for links on hover*/ }
+        #ticket__page .container .row .tab-content .tab__details .info__link {
+          background: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+          /*setting the color for the link*/
+          background-clip: text;
+          /*clipping the color to the actual text*/
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          /*filling the text with gradient color*/ }
+      #ticket__page .container .row .column--special {
+        padding-top: 0;
+        padding-right: 30px;
+        padding-bottom: 0;
+        padding-left: 30px;
+        /*including the padding*/ }
+        #ticket__page .container .row .column--special .price__item {
+          font-family: "bluu_nexttitling";
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 600;
+          /*setting the font*/
+          border-top: 1px solid #6352CE;
+          /*adding border top*/
+          padding-top: 10px;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+          /*including the padding*/ }
+          @media screen and (min-width: 768px) {
+            #ticket__page .container .row .column--special .price__item {
+              border: none;
+              /*no border for tablet & desktop*/ } }
+        #ticket__page .container .row .column--special .price__detail {
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 600;
+          /*setting the font*/
+          color: #a4a3a1;
+          /*including the color*/
+          padding-top: 20px;
+          padding-right: 0;
+          padding-bottom: 10px;
+          padding-left: 0;
+          /*including the padding*/ }
+          @media screen and (min-width: 768px) {
+            #ticket__page .container .row .column--special .price__detail {
+              padding-top: 10px;
+              padding-right: 0;
+              padding-bottom: 0;
+              padding-left: 0;
+              /*including the padding for table and desktop*/ } }
+        #ticket__page .container .row .column--special .price__book {
+          width: 180px;
+          display: inline;
+          padding-top: 12px;
+          padding-right: 39px;
+          padding-bottom: 12px;
+          padding-left: 39px;
+          background: #6352CE;
+          color: white;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          line-height: auto;
+          font-weight: 500;
+          text-align: center;
+          border-radius: 25px;
+          /*setting the font*/
+          margin-top: -10px;
+          margin-right: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+          /*including the margin*/ }
+          #ticket__page .container .row .column--special .price__book:hover {
+            background: #988CE3;
+            transition: 500ms ease-in;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      #ticket__page .container .row .column .photos .photo__items {
+        position: relative;
+        /*position relative for the images*/
+        width: 80%;
+        /*setting the width*/
+        border: 1px solid transparent;
+        /*setting the border*/
+        border-image: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+        /*setting the border color*/
+        border-image-slice: 1;
+        /*inward offset*/
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        /*including the padding*/
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+        /*background layer to darken the images*/
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+        margin-left: 0;
+        /*including the margin*/ }
+      #ticket__page .container .row .column .photos .img__text--primary,
+      #ticket__page .container .row .column .photos .img__text--secondary,
+      #ticket__page .container .row .column .photos .img__text--additional {
+        position: absolute;
+        /*setting position absolute for the text on top of the images*/
+        z-index: 100;
+        /*setting z-index so the text is visable*/
+        font-family: "bluu_nexttitling";
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+        /*setting the font*/
+        color: white;
+        width: 70%;
+        /*setting the width for the text*/
+        background: none;
+        /*removing background*/
+        padding-top: 50px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        /*including padding*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .column .photos .img__text--primary,
+          #ticket__page .container .row .column .photos .img__text--secondary,
+          #ticket__page .container .row .column .photos .img__text--additional {
+            width: 20%;
+            /*setting the width for the tablet & desktop*/
+            padding-top: 30px;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            /*setting the padding for tablet*/ } }
+        @media screen and (min-width: 1280px) {
+          #ticket__page .container .row .column .photos .img__text--primary,
+          #ticket__page .container .row .column .photos .img__text--secondary,
+          #ticket__page .container .row .column .photos .img__text--additional {
+            font-family: "bluu_nexttitling";
+            font-size: 36px;
+            line-height: 32px;
+            font-weight: 600;
+            /*setting the font for desktop*/
+            padding-top: 50px;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            /*setting the padding for desktop*/ } }
+      #ticket__page .container .row .column .photos .img__text--primary {
+        left: 10%;
+        /*setting text position for mobile*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .column .photos .img__text--primary {
+            left: 10%;
+            /*setting text position for tablet*/ } }
+        @media screen and (min-width: 1280px) {
+          #ticket__page .container .row .column .photos .img__text--primary {
+            left: 17%;
+            /*setting text position for desktop*/ } }
+      #ticket__page .container .row .column .photos .img__text--secondary {
+        left: 10%;
+        /*setting text position for mobile*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .column .photos .img__text--secondary {
+            left: 40%;
+            /*setting text position for tablet*/ } }
+        @media screen and (min-width: 1280px) {
+          #ticket__page .container .row .column .photos .img__text--secondary {
+            left: 40%;
+            /*setting text position for desktop*/ } }
+      #ticket__page .container .row .column .photos .img__text--additional {
+        left: 10%;
+        /*setting text position for mobile*/ }
+        @media screen and (min-width: 768px) {
+          #ticket__page .container .row .column .photos .img__text--additional {
+            left: 70%;
+            /*setting text position for tablet*/ } }
+        @media screen and (min-width: 1280px) {
+          #ticket__page .container .row .column .photos .img__text--additional {
+            left: 64%;
+            /*setting text position for desktop*/ } }
 
 .bg1 {
   background: url(../img/discovbanner.png) no-repeat scroll center;
