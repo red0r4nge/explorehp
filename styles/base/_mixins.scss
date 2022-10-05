@@ -1,5 +1,3 @@
-@import 'variables';
-
 @mixin setWrapper ($width, $margin, $padding) {
   width: $width;
   margin: $margin;
@@ -35,6 +33,13 @@
   padding-left: $left;
 }
 
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
 @mixin setLinkdecor {
   text-decoration: none;
   transition: .3s;
@@ -62,7 +67,16 @@
   @include setFont ($roboto, 600, 16px, 24px);
 }
 
+@mixin setRobsubauto {
+  @include setFont ($roboto, 500, 14px, auto);
+}
+
+@mixin setRobbody {
+  @include setFont ($roboto, 400, 14px, 16px);
+}
+
 //Bluu Next
+
 @mixin setBluuh1 {
   @include setFont ($bluunext, 600, 64px, 72px);
 }
@@ -73,6 +87,10 @@
 
 @mixin setBluutitle {
   @include setFont ($bluunext, 600, 20px, 28px);
+}
+
+@mixin setBluuhsubt {
+  @include setFont ($bluunext, 600, 36px, 32px)
 }
 
 @mixin setBluusubtitle {

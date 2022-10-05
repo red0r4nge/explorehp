@@ -1,26 +1,24 @@
 @import '../base/variables';
 @import '../base/mixins';
 
-#page1 {
+#homepage {
+
   .main {
     .banner {
       background: url(../img/discovbanner.png) no-repeat scroll center;
       transition: 2s background;
       background-size: cover;
+      background-attachment: fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
 
       .banner__headline {
-        @include setBluuh2;
-        margin: 70px 0;
+        @include setHp;
+        @include setWrapper (400px, 70px 0, 0);
         color: #fdfdfd;
 
         @media (min-width: $tablet) {
           margin: 162px 0;
-        }
-
-        @media (min-width: $desktop) {
-          @include setBluuh1;
         }
       }
 
@@ -28,15 +26,318 @@
         @include setFlexbox (row, center, center, nowrap);
 
         .banner__link {
-          @include setLinkdecor;
           @include Button_accent;
-          display: inline-block;
+          @include setLinkdecor;
+          display: block;
           width: 205px;
           margin-bottom: 50px;
 
           @media (min-width: $tablet) {
             margin: 0;
           }
+        }
+      }
+    }
+
+    .cards {
+      background-color: #48483D;
+
+      .wrapper {
+        @media (max-width: $mobilemax) {
+          width: 100%;
+        }
+
+        .cards__headline {
+          @include setBluuh2;
+          color: #FDFDFD;
+          text-align: center;
+          margin: 20px 0;
+
+          @media (min-width: $tablet) {
+            margin: 35px 0;
+          }
+
+          @media (min-width: $desktop) {
+            margin: 45px 0;
+          }
+        }
+
+        .cards__container {
+
+          .cards__item {
+
+            @media (max-width: $mobilemax) {
+              background: url(../img/studiotour.png) no-repeat;
+              background-size: cover;
+              @include setFlexbox (column, start, center, nowrap);
+            }
+
+            @media (min-width: $tablet) {
+              background: none;
+              @include setFlexbox (column, space-between, start, nowrap);
+            }
+
+            .cards__group {
+
+              .cards__picture {
+                display: none;
+
+                @media (min-width: $tablet) {
+                  display: block;
+                  @include setDimensions (100%, 200px, 25px);
+                  object-fit: cover;
+                }
+
+                @media (min-width: $desktop) {
+                  height: 400px;
+                }
+              }
+
+              .cards__title {
+                @include setRobh2;
+                color: #fdfdfd;
+                margin: 150px 0 30px;
+
+                @media (min-width: $tablet) {
+                  margin: 30px 0 35px;
+                }
+
+                @media (min-width: $desktop) {
+                  margin: 30px 0 56px;
+                }
+              }
+
+              .cards__list {
+                @media (max-width: $mobilemax) {
+                  display: none;
+                }
+
+                @media (min-width: $tablet) {
+                  @include setWrapper (100%, 0 0 42px, 0)
+                }
+
+                @media (min-width: $desktop) {
+                  @include setWrapper (100%, 0 0 67px, 0)
+                }
+
+                .cards__list-item {
+                  @include setFlexbox (row, start, start, nowrap);
+
+
+                  .fa-check {
+                    display: inline-block;
+                    margin-right: 14px;
+                    color: $color--secondary;
+                  }
+
+                  .list__text {
+                    color: #fdfdfd;
+                    margin: 0 0 15px;
+                    @include setRobbody;
+                  }
+                }
+              }
+            }
+
+            .cards__link {
+              @include Button_std280;
+              width: 210px;
+              @include setLinkdecor;
+              display: block;
+              margin-bottom: 94px;
+            }
+          }
+
+          .cards__item-primary {
+            @media (max-width: $mobilemax) {
+              background: url(../img/cursed.png) no-repeat;
+              background-size: cover;
+              margin: 20px 0;
+            }
+          }
+
+          .cards__item-secondary {
+            @media (max-width: $mobilemax) {
+              background: url(../img/locations.png) no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#autho {
+  background-image: url(../img/authorization/Background_autho.png);
+  margin: 0 auto;
+  height: 100%;
+
+  .title__autho {
+    @include setFlexbox (row, space-around, center, wrap);
+    width: $width_wrap;
+    margin: 5% auto;
+
+    .heading__autho {
+      @include setHp ();
+      color: $font-color--main;
+      text-align: center;
+    }
+
+    .subtitle__autho {
+      @include setBluusubtitle ();
+      width: 60%;
+      margin-left: 20%;
+      color: $font-color--main;
+      text-align: center;
+      font-style: italic;
+
+      .link__inside {
+        color: gold;
+      }
+    }
+  }
+
+  .main__auto {
+    @include setFlexbox (row, center, center, wrap);
+    width: $width_wrap;
+    margin: 0 auto;
+
+    .form__auto {
+      @include setFlexbox (column, center, center, wrap);
+      @include padding (5%, 5%, 5%, 5%);
+      margin: 5%;
+
+
+      .form__label {
+        @include setRobsubauto ();
+        color: $font-color--main;
+        width: 60%;
+
+        .form__auto--item {
+          @include padding (3%, 3%, 3%, 3%);
+          background: #E3E8FB;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+
+      .form__link {
+        @include setRobsubauto ();
+        color: $font-color--main;
+        width: 60%;
+        margin-bottom: 2%;
+      }
+
+
+      .subtitle__autho {
+        @include setBluusubtitle ();
+        color: $font-color--main;
+        text-align: center;
+      }
+
+      .btn__disabled {
+        @include Button_disabled280 ();
+        @include padding (12px, 12%, 12px, 12%);
+        @include setLinkdecor ();
+        width: 60%;
+      }
+    }
+
+    .main__item--secondary {
+      @include setFlexbox (column, space-around, center, wrap);
+
+      .text__autho {
+        @include setRobsubauto ();
+        color: $font-color--main;
+        width: 60%;
+        text-align: center;
+      }
+
+      .btn__title--std {
+        @include Button_std280 ();
+        @include setLinkdecor ();
+        @include padding (12px, 12%, 12px, 12%);
+        width: 50%;
+      }
+    }
+
+    .main__item--additional {
+      @include setFlexbox (column, center, center, wrap);
+
+      .img__autho {
+        @include setWrapper(80%, 1%, 1%);
+        object-fit: cover;
+        height: 250px;
+        border-radius: 25px;
+
+        @media (min-width: $tablet) and (max-width: 1279px) {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+#login_error {
+  background: #48483D;
+  margin: 0 auto;
+
+  .main__login {
+    margin: 5% auto;
+
+    .main__login--primary {
+      @include setFlexbox (column, space-around, center, wrap);
+
+      .subtitle__login {
+        display: block;
+        @include setHp ();
+        color: $font-color--main;
+        text-align: center;
+        width: 80%;
+        @include padding (2%, 5%, 2%, 5%);
+        border-bottom: 2px solid transparent;
+        border-image: $color--gradient;
+        border-image-slice: 1;
+      }
+    }
+
+    .main__login--secondary {
+      @include setFlexbox (column, space-evenly, center, wrap);
+      background: #48483D;
+
+      .text__login {
+        display: block;
+        @include setRobsubauto ();
+        margin: 0;
+        color: $font-color--main;
+        width: 60%;
+        text-align: center;
+        width: 40%;
+      }
+
+      .form__login {
+        @include setFlexbox (column, center, center, wrap);
+        margin: 2%;
+
+        .form__label {
+          @include setRobsubauto ();
+          color: $font-color--main;
+          width: 100%;
+
+          .form__login--item {
+            @include padding (3%, 3%, 3%, 3%);
+            background: #E3E8FB;
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+
+        .btn__disabled {
+          @include Button_disabled280 ();
+          @include padding (12px, 12%, 12px, 12%);
+          @include setLinkdecor ();
+          width: 100%;
         }
       }
     }
@@ -47,6 +348,7 @@
   background: url(../img/discovbanner.png) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
 }
@@ -55,6 +357,7 @@
   background: url(../img/hogwarts.jpg) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
 }
@@ -63,6 +366,7 @@
   background: url(../img/platform.jpg) no-repeat scroll center;
   transition: 2s background;
   background-size: cover;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
 }
