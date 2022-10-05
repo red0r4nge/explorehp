@@ -542,6 +542,8 @@
           /*setting the font*/
           @include margin (-10px, 0, 0, 0);
           /*including the margin*/
+
+          @include setLinkdecor;
         }
       }
 
@@ -661,16 +663,329 @@
   }
 }
 
+/* input type number */
+#basket {
+  background-color: #48483D;
+
+  .wrapper {
+    @include setWrapper (92%, 0 auto, 0 auto);
+
+    .row {
+
+      .column {
+
+        .title {
+          // title 
+          @include setFont ($roboto, 600, 24px, 32px);
+          color: $font-color--main;
+          text-align: start;
+        }
+
+        .basket {
+          // basket 
+          @include setWrapper (90%, 0, 0);
+          border-top: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+          border-image: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+          border-image-slice: 1;
+          color: $font-color--main;
+
+          // condition section 
+          .basket__item {
+            @include setFlexbox (row, space-between, center, wrap);
+
+            .condition {
+              @include setFlexbox (column, center, start, nowrap);
+              @include setWrapper (30%, 0 0 0 1%, none);
+
+              .subtitle {
+                @include setWrapper (70%, 9% 0 0, 0);
+                @include setFont ($roboto, 600, 16px, 24px);
+              }
+
+              .age {
+                @include setDimensions (70%, auto, none);
+                @include setFont ($roboto, 400, 12px, 14px);
+              }
+            }
+
+            // input type number 
+            .input-number {
+              @include setFlexbox (row, space-between, center, wrap);
+              @include setDimensions (30%, auto, 6px);
+              align-items: center;
+              color: #424348;
+              font-size: 14px;
+              text-align: center;
+              background-color: #48483D;
+
+              .input-number__input {
+                @include setDimensions (33%, 32px, none);
+                border: none;
+                padding: 8px;
+                text-align: center;
+                background-color: #48483D;
+                color: $font-color--main;
+              }
+
+              .input-number__minus,
+              .input-number__plus {
+                @include setFlexbox (row, center, center, wrap);
+                @include setDimensions (24px, 24px, none);
+                @include setFont ($roboto, 500, 20px, 4px);
+                background-color: $color--disabled;
+                color: $font-color--main;
+                text-align: center;
+                border-radius: 50%;
+                user-select: none;
+                cursor: pointer;
+
+                &:hover {
+                  background: #988CE3;
+                  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+                &:active {
+                  background-color: $color--primary
+                }
+              }
 
 
 
+            }
 
+            // price section
+            .price {
+              @include setWrapper (30%, 0, 2% 0 0);
+              @include setFont ($roboto, 600, 16px, 24px);
+              text-align: center;
+            }
+          }
+        }
 
+        // login button
+        .login {
+          @include setFlexbox (column, center, center, wrap);
+          @include setWrapper (90%, 2% 0, 2% 0 0);
 
+          .login-btn {
+            width: 180px;
+            display: inline;
+            @include padding (12px, 39px, 12px, 39px);
+            margin-bottom: 2%;
+            background: $color--primary;
+            color: $font-color--main;
+            @include setFont ($roboto, 500, 14px, auto);
+            text-align: center;
+            border-radius: 25px;
+            text-decoration: none;
 
+            &:hover {
+              background: #988CE3;
+              transition: 500ms ease-in;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+          }
 
+          .login-text {
+            @include setFont ($roboto, 400, 14px, 16px);
+            color: $color--additional;
+            text-align: center;
+          }
+        }
 
+        .title-author {
+          @include setFont ($roboto, 600, 24px, 32px);
+          color: $font-color--main;
+          text-align: start;
+        }
 
+        // form block
+        .form {
+          @include setFlexbox (row, space-around, start, wrap);
+          padding: 4% 0 0;
+          border-top: 3px solid transparent;
+          border-image: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
+          color: $font-color--main;
+          border-image-slice: 1;
+
+          .form__item {
+            width: 40%;
+            padding: 2% 0;
+
+            .form-label {
+              @include setFont ($roboto, 600, 14px, 12px);
+              margin: 0 0 4px;
+            }
+
+            .form-control {
+
+              &:focus {
+                border: 1px solid #988CE3;
+              }
+            }
+          }
+        }
+
+        // payment block
+        .pay {
+          @include setFlexbox (column, center, center, wrap);
+          @include setWrapper (auto, 4% 0, 0);
+
+          .pay-btn {
+            width: 280px;
+            display: inline;
+            @include padding (12px, 39px, 12px, 39px);
+            background: $color--gradient;
+            color: $font-color--black;
+            @include setFont ($roboto, 500, 14px, auto);
+            text-align: center;
+            border-radius: 25px;
+            text-decoration: none;
+
+            &:hover {
+              background: $color--secondary;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+          }
+        }
+
+        // terms of use 
+        .terms {
+          @include setFont ($roboto, 400, 14px, 16px);
+          @include setWrapper (auto, 5% 0, 0);
+          color: $font-color--main;
+          text-align: center;
+
+          .terms-privacy {
+            @include setFont ($roboto, 400, 14px, 16px);
+            text-decoration: none;
+            color: gold;
+            border-bottom: 1px solid gold;
+
+            &:hover {
+              color: rgb(249, 157, 30);
+              border-bottom: 1px solid rgb(249, 157, 30);
+            }
+          }
+        }
+      }
+    }
+
+    .column {
+
+      .photos {
+        @include setFlexbox (row, center, center, nowrap);
+
+        .photo__items {
+          position: relative;
+          /*position relative for the images*/
+          width: 80%;
+          /*setting the width*/
+          border: 1px solid transparent;
+          /*setting the border*/
+          border-image: $color--gradient;
+          /*setting the border color*/
+          border-image-slice: 1;
+          /*inward offset*/
+          @include padding (10px, 10px, 10px, 10px);
+          /*including the padding*/
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+          /*background layer to darken the images*/
+          @include margin (0, 0, 50px, 0);
+          /*including the margin*/
+        }
+
+        .img__text--primary,
+        .img__text--secondary,
+        .img__text--additional {
+          position: absolute;
+          /*setting position absolute for the text on top of the images*/
+          z-index: 100;
+          /*setting z-index so the text is visable*/
+          @include setBluuh2 ();
+          /*setting the font*/
+          width: 70%;
+          /*setting the width for the text*/
+          background: none;
+          /*removing background*/
+          @include padding (50px, 0, 0, 0);
+          /*including padding*/
+          color: $font-color--main;
+
+          @media screen and (min-width: $tablet) {
+            width: 20%;
+            /*setting the width for the tablet & desktop*/
+            @include padding (30px, 0, 0, 0);
+            /*setting the padding for tablet*/
+          }
+
+          @media screen and (min-width: $desktop) {
+            @include setBluuhsubt ();
+            /*setting the font for desktop*/
+            @include padding (50px, 0, 0, 0);
+            /*setting the padding for desktop*/
+          }
+        }
+
+        .img__text--primary {
+
+          left: 10%;
+          /*setting text position for mobile*/
+
+          @media screen and (min-width: $tablet) {
+
+            left: 10%;
+            /*setting text position for tablet*/
+          }
+
+          @media screen and (min-width: $desktop) {
+
+            left: 12%;
+            /*setting text position for desktop*/
+          }
+        }
+
+        .img__text--secondary {
+
+          left: 10%;
+          /*setting text position for mobile*/
+
+          @media screen and (min-width: $tablet) {
+
+            left: 40%;
+            /*setting text position for tablet*/
+          }
+
+          @media screen and (min-width: $desktop) {
+
+            left: 40%;
+            /*setting text position for desktop*/
+          }
+        }
+
+        .img__text--additional {
+
+          left: 10%;
+          /*setting text position for mobile*/
+
+          @media screen and (min-width: $tablet) {
+
+            left: 70%;
+            /*setting text position for tablet*/
+          }
+
+          @media screen and (min-width: $desktop) {
+
+            left: 66%;
+            /*setting text position for desktop*/
+          }
+        }
+      }
+
+    }
+  }
+}
 
 
 .bg1 {

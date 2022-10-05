@@ -44,7 +44,7 @@
               <a href="#" class="nav__logo"><img src="img/logo.svg" alt="logo"></a>
             </div>
             <div class="nav__group nav__group-primary">
-              <a href="#"><img src="img/navbasket.svg" alt="navbasket" id="nav__basket"></a>
+              <a href="pages/basket.html"><img src="img/navbasket.svg" alt="navbasket" id="nav__basket"></a>
               <a href="pages/authorization.html" id="nav__login">Log in</a>
             </div>
           </div>
@@ -216,24 +216,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
       integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>$(function () {
-        bg_from = 1;
-        bg_to = 3;
-        bg_now = 1;
-        bg_interval = 5;
-
-        setInterval(function () {
-          $('.banner__container').removeClass('bg' + bg_now);
-          if (bg_now == bg_to) bg_now = 1;
-          else bg_now++;
-          $('.banner__container').addClass('bg' + bg_now);
-        }
-
-          , bg_interval * 1000);
-      }
-
-      );
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
