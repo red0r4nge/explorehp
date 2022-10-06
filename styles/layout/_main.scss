@@ -711,7 +711,7 @@
 
             // input type number 
             .input-number {
-              @include setFlexbox (row, space-between, center, wrap);
+              @include setFlexbox (row, space-between, center, nowrap);
               @include setDimensions (30%, auto, 6px);
               align-items: center;
               color: #424348;
@@ -834,7 +834,6 @@
               }
             }
           }
-        }
 
         // payment block
         .pay {
@@ -858,11 +857,14 @@
             }
           }
         }
+        }
+
+
 
         // terms of use 
         .terms {
           @include setFont ($roboto, 400, 14px, 16px);
-          @include setWrapper (auto, 5% 0, 0);
+          @include setWrapper (auto, 1% auto 7%, 0);
           color: $font-color--main;
           text-align: center;
 

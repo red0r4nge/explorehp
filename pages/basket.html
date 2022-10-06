@@ -14,8 +14,8 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
-    integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -38,7 +38,9 @@
           </div>
           <div class="nav__group nav__group-primary">
             <a href="#"><img src="../img/navbasket.svg" alt="navbasket" id="nav__basket"></a>
-            <a href="authorization.html" id="nav__login">Log in</a>
+            <a href="authorization.html" id="nav__login">
+              Log in
+            </a>
           </div>
         </div>
       </div>
@@ -52,7 +54,9 @@
         <div class="row g-0">
           <div class="column col-12 col-md-6">
             <!-- title  -->
-            <h2 class="title">Guests </h2>
+            <h2 class="title">
+              Guests
+            </h2>
             <!-- basket  -->
             <div class="basket">
               <div class="basket__item">
@@ -66,15 +70,17 @@
                   </p>
                 </div>
                 <!-- input type number  -->
+                <!-- <form id="in_1" action="https://fom.in.ua/echo" method="post"> -->
                 <div class="input-number">
                   <div class="input-number__minus">
                     -
                   </div>
-                  <input class="input-number__input" type="text" pattern="^[0-9]+$" value="0">
+                  <input class="input-number__input" name="submit5" type="text" pattern="^[0-9]+$" value="0">
                   <div class="input-number__plus">
                     +
                   </div>
                 </div>
+                <!-- </form> -->
                 <!-- price section  -->
                 <div class="price">
                   <p class="price__value">
@@ -93,14 +99,16 @@
                   </p>
                 </div>
                 <!-- input type number  -->
+                <!-- <form id="in_2" action="https://fom.in.ua/echo" method="post"> -->
                 <div class="input-number">
                   <div class="input-number__minus">
                     -
-                  </div><input class="input-number__input" type="text" pattern="^[0-9]+$" value="0">
+                  </div><input class="input-number__input" name="submit6" type="text" pattern="^[0-9]+$" value="0">
                   <div class="input-number__plus">
                     +
                   </div>
                 </div>
+                <!-- </form> -->
                 <!-- price section  -->
                 <div class="price">
                   <p class="price__value">
@@ -119,14 +127,16 @@
                   </p>
                 </div>
                 <!-- input type number  -->
+                <!-- <form id="in_3" action="https://fom.in.ua/echo" method="post"> -->
                 <div class="input-number">
                   <div class="input-number__minus">
                     -
-                  </div><input class="input-number__input" type="text" min="1" max="5" pattern="^[0-9]+$" value="0">
+                  </div><input class="input-number__input" name="submit7" type="text" pattern="^[0-9]+$" value="0">
                   <div class="input-number__plus">
                     +
                   </div>
                 </div>
+                <!-- </form> -->
                 <!-- price section  -->
                 <div class="price">
                   <p class="price__value">
@@ -145,14 +155,16 @@
                   </p>
                 </div>
                 <!-- input type number  -->
+                <!-- <form id="in_4" action="https://fom.in.ua/echo" method="post"> -->
                 <div class="input-number">
                   <div class="input-number__minus">
                     -
-                  </div><input class="input-number__input" type="text" pattern="^[0-9]+$" value="0">
+                  </div><input class="input-number__input" name="submit8" type="text" pattern="^[0-9]+$" value="0">
                   <div class="input-number__plus">
                     +
                   </div>
                 </div>
+                <!-- </form> -->
                 <!-- price section  -->
                 <div class="price">
                   <p class="price__value">
@@ -178,39 +190,43 @@
               Enter your details below
             </h2>
             <!-- authorization form  -->
-            <form action="https://fom.in.ua/echo" method="post">
+            <form id="form2" action="https://fom.in.ua/echo" method="post">
               <div class="form">
                 <div class="form__item mb-3">
                   <label for="formGroupExampleInput" class="form-label">
                     FIRST NAME
-                  </label><input type="text" class="form-control shadow-none" id="formGroupExampleInput">
+                  </label>
+                  <input type="text" name="submit1" class="form-control shadow-none">
                 </div>
                 <div class="form__item mb-3">
                   <label for="formGroupExampleInput2" class="form-label">
                     LAST NAME
-                  </label><input type="text" class="form-control shadow-none" id="formGroupExampleInput2">
+                  </label>
+                  <input type="text" name="submit2" class="form-control shadow-none">
                 </div>
                 <div class="form__item mb-3">
                   <label for="formGroupExampleInput" class="form-label">
                     EMAIL
-                  </label><input type="text" class="form-control shadow-none" id="formGroupExampleInput">
+                  </label>
+                  <input type="text" name="submit3" class="form-control shadow-none">
                 </div>
                 <div class="form__item mb-3">
                   <label for="formGroupExampleInput2" class="form-label">
                     CONFIRM EMAIL
-                  </label><input type="text" class="form-control shadow-none" id="formGroupExampleInput2">
+                  </label>
+                  <input type="text" name="submit4" class="form-control shadow-none">
+                </div>
+                <!-- pay button  -->
+                <div class="pay">
+                  <input class="pay-btn" type="submit" value="CONFIRM & PAY">
                 </div>
               </div>
             </form>
-            <!-- pay button  -->
-            <div class="pay"><a class="pay-btn" href="#">
-                CONFIRM & PAY
-              </a>
-            </div>
             <p class="terms">
               By clicking “Confirm & Pay” you agree to our
               <a class="terms-privacy" href="#">general terms
-              </a>and
+              </a>
+              and
               <a class="terms-privacy" href="#">
                 privacy policy
               </a>
@@ -270,23 +286,23 @@
               <ul class="reference__list">
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Terms & Conditions
+                    Terms & Conditions
                   </a>
                 </li>
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Privacy policy
-                </a>
+                    Privacy policy
+                  </a>
                 </li>
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Company details
-                </a>
+                    Company details
+                  </a>
                 </li>
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Cookie policy
-                </a>
+                    Cookie policy
+                  </a>
                 </li>
               </ul>
             </div>
@@ -299,23 +315,23 @@
               <ul class="reference__list">
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Get help
-                </a>
+                    Get help
+                  </a>
                 </li>
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Chat with us
-                </a>
+                    Chat with us
+                  </a>
                 </li>
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  Email us
-                </a>
+                    Email us
+                  </a>
                 </li>
                 <li class="reference__item">
                   <a href="#" class="reference__link">
-                  FAQ
-                </a>
+                    FAQ
+                  </a>
                 </li>
               </ul>
             </div>
@@ -343,14 +359,12 @@
                     How to get here
                   </a>
                 </li>
-                <li class="reference__item"><a href="https://goo.gl/maps/drdT4GHD5gsboGcY7" class="reference__link"
-                    target="_blank">
+                <li class="reference__item"><a href="https://goo.gl/maps/drdT4GHD5gsboGcY7" class="reference__link" target="_blank">
                     Map
                   </a>
                 </li>
                 <li class="reference__item">
-                  <a href="https://goo.gl/maps/drdT4GHD5gsboGcY7" class="reference__link"
-                    target="_blank">
+                  <a href="https://goo.gl/maps/drdT4GHD5gsboGcY7" class="reference__link" target="_blank">
                     Transportation options
                   </a>
                 </li>
@@ -364,11 +378,10 @@
   <!-- script  -->
   <script src="../js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"
-    integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
