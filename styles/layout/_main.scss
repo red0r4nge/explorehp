@@ -767,6 +767,9 @@
         .login {
           @include setFlexbox (column, center, center, wrap);
           @include setWrapper (90%, 2% 0, 2% 0 0);
+          @media screen and (max-width: $mobilemax) {
+            margin: 30px 0 0 ;
+          }
 
           .login-btn {
             width: 180px;
@@ -789,6 +792,9 @@
 
           .login-text {
             @include setFont ($roboto, 400, 14px, 16px);
+            @media screen and (max-width: $mobilemax) {
+              margin: 20px 0 40px;
+            }
             color: $color--additional;
             text-align: center;
           }
@@ -803,6 +809,9 @@
         // form block
         .form {
           @include setFlexbox (row, space-around, start, wrap);
+          @media screen and (max-width: $mobilemax) {
+            margin: 30px 0 0 ;
+          }
           padding: 4% 0 0;
           border-top: 3px solid transparent;
           border-image: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
@@ -873,14 +882,14 @@
     }
 
     .column {
-
+      // gallery 
       .photos {
         @include setFlexbox (row, center, center, nowrap);
 
         .photo__items {
           position: relative;
           /*position relative for the images*/
-          width: 80%;
+          width: 100%;
           /*setting the width*/
           border: 1px solid transparent;
           /*setting the border*/
@@ -930,7 +939,7 @@
 
         .img__text--primary {
 
-          left: 10%;
+          left: 20%;
           /*setting text position for mobile*/
 
           @media screen and (min-width: $tablet) {
@@ -941,14 +950,14 @@
 
           @media screen and (min-width: $desktop) {
 
-            left: 12%;
+            left: 10%;
             /*setting text position for desktop*/
           }
         }
 
         .img__text--secondary {
 
-          left: 10%;
+          left: 20%;
           /*setting text position for mobile*/
 
           @media screen and (min-width: $tablet) {
@@ -966,7 +975,7 @@
 
         .img__text--additional {
 
-          left: 10%;
+          left: 20%;
           /*setting text position for mobile*/
 
           @media screen and (min-width: $tablet) {
@@ -977,7 +986,7 @@
 
           @media screen and (min-width: $desktop) {
 
-            left: 66%;
+            left: 71%;
             /*setting text position for desktop*/
           }
         }
