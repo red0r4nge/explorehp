@@ -10,11 +10,11 @@
 
       .banner__headline {
         @include setHp;
-        @include setWrapper (400px, 70px 0, 0);
         color: $font-color--main;
+        @include setWrapper (340px, 70px auto, 0);
 
         @media (min-width: $tablet) {
-          margin: 162px 0;
+          @include setWrapper (400px, 162px 0, 0);
         }
       }
 

@@ -27,7 +27,7 @@
           @media (min-width: $desktop) {
             @include setFlexbox (row, space-between, start, nowrap);
             opacity: 1;
-            @include setWrapper (564px, 0, 0);
+            @include setWrapper (400px, 0, 0);
           }
 
           .menu__item {

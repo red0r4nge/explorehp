@@ -78,7 +78,7 @@ ul {
               flex-wrap: nowrap;
               flex-shrink: 0;
               opacity: 1;
-              width: 564px;
+              width: 400px;
               margin: 0;
               padding: 0; } }
           .header .nav .nav__group .container__menu .menu .menu__item {
@@ -192,13 +192,15 @@ ul {
     font-size: 64px;
     line-height: 72px;
     font-weight: 400;
-    width: 400px;
-    margin: 70px 0;
-    padding: 0;
-    color: white; }
+    color: white;
+    width: 340px;
+    margin: 70px auto;
+    padding: 0; }
     @media (min-width: 768px) {
       #homepage .main .banner .banner__headline {
-        margin: 162px 0; } }
+        width: 400px;
+        margin: 162px 0;
+        padding: 0; } }
   #homepage .main .banner .banner__group {
     display: flex;
     flex-direction: row;
