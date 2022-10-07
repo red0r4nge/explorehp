@@ -211,6 +211,10 @@
         width: 60%;
 
         .form__auto--item {
+          @media (max-width: $mobilemax) {
+            margin: 10px 0;
+          }
+
           @include padding (3%, 3%, 3%, 3%);
           background: #E3E8FB;
           width: 100%;
@@ -267,6 +271,10 @@
         height: 250px;
         border-radius: 25px;
 
+        @media (max-width: $mobilemax) {
+          margin: 25px 0;
+        }
+
         @media (min-width: $tablet) and (max-width: 1279px) {
           height: 200px;
         }
@@ -310,6 +318,10 @@
         width: 60%;
         text-align: center;
         width: 40%;
+
+        @media (max-width: $mobilemax) {
+          @include setWrapper (80%, 10px 0, 0)
+        }
       }
 
       .form__login {
@@ -767,8 +779,9 @@
         .login {
           @include setFlexbox (column, center, center, wrap);
           @include setWrapper (90%, 2% 0, 2% 0 0);
+
           @media screen and (max-width: $mobilemax) {
-            margin: 30px 0 0 ;
+            margin: 30px 0 0;
           }
 
           .login-btn {
@@ -792,9 +805,11 @@
 
           .login-text {
             @include setFont ($roboto, 400, 14px, 16px);
+
             @media screen and (max-width: $mobilemax) {
               margin: 20px 0 40px;
             }
+
             color: $color--additional;
             text-align: center;
           }
@@ -809,9 +824,11 @@
         // form block
         .form {
           @include setFlexbox (row, space-around, start, wrap);
+
           @media screen and (max-width: $mobilemax) {
-            margin: 30px 0 0 ;
+            margin: 30px 0 0;
           }
+
           padding: 4% 0 0;
           border-top: 3px solid transparent;
           border-image: linear-gradient(90deg, #ECBC40 0%, #FFF1BA 51.04%, #EDBD41 100%);
@@ -835,28 +852,28 @@
             }
           }
 
-        // payment block
-        .pay {
-          @include setFlexbox (column, center, center, wrap);
-          @include setWrapper (auto, 4% 0, 0);
+          // payment block
+          .pay {
+            @include setFlexbox (column, center, center, wrap);
+            @include setWrapper (auto, 4% 0, 0);
 
-          .pay-btn {
-            width: 280px;
-            display: inline;
-            @include padding (12px, 39px, 12px, 39px);
-            background: $color--gradient;
-            color: $font-color--black;
-            @include setFont ($roboto, 500, 14px, auto);
-            text-align: center;
-            border-radius: 25px;
-            text-decoration: none;
+            .pay-btn {
+              width: 280px;
+              display: inline;
+              @include padding (12px, 39px, 12px, 39px);
+              background: $color--gradient;
+              color: $font-color--black;
+              @include setFont ($roboto, 500, 14px, auto);
+              text-align: center;
+              border-radius: 25px;
+              text-decoration: none;
 
-            &:hover {
-              background: $color--secondary;
-              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              &:hover {
+                background: $color--secondary;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              }
             }
           }
-        }
         }
 
 
@@ -884,6 +901,7 @@
     }
 
     .column {
+
       // gallery 
       .photos {
         @include setFlexbox (row, center, center, nowrap);
